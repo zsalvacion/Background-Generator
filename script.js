@@ -6,6 +6,17 @@ var button = document.getElementById("randomColor");
 
 console.log(Math.floor(Math.random()*16777215).toString(16));
 console.log("#"+(Math.random()*0xFFFFFF<<0).toString(16));
+
+//Problem 1
+body.style.background =
+"linear-gradient(to right, " 
++ color1.value 
++ ", " 
++ color2.value 
++ ")";
+//Problem 2
+css.textContent = body.style.background + ";";
+
 function setGradient() {
 	body.style.background = 
 	"linear-gradient(to right, " 
@@ -29,15 +40,6 @@ function setRandomGradient() {
 	color2.value = randomColors[1];
 	setGradient();
 }
-//Problem 1
-body.style.background =
-"linear-gradient(to right, " 
-+ color1.value 
-+ ", " 
-+ color2.value 
-+ ")";
-//Problem 2
-css.textContent = body.style.background + ";";
 
 color1.addEventListener("input", setGradient);
 
