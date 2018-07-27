@@ -13,8 +13,7 @@ function setGradient() {
 	+ ", " 
 	+ color2.value 
 	+ ")";
-	//Changed to activate on page load
-	//css.textContent = body.style.background + ";";
+	css.textContent = body.style.background + ";";
 }
 //Problem 3
 function setRandomGradient() {
